@@ -1,0 +1,78 @@
+<div class="login-screen">
+    <div ng-show="!showCreateUserForm">
+        <h1 class="text-center">Welcome to ComPAIR</h1>
+        <div class="row">
+            <form name="loginForm" class="form" ng-class="{'col-sm-6': LoginConfigurableHTML.addition_instructions}"
+                  ng-submit="submit()" novalidate>
+                <fieldset>
+                    <div ng-if="AuthTypesEnabled.cas || AuthTypesEnabled.saml">
+                        <h2>Log in with your CWL here:</h2>
+                        <a id="cwl_login" href="/api/saml/login" ng-if="AuthTypesEnabled.saml" ng-bind-html="LoginConfigurableHTML.saml">
+                            <img class="center-block" src="https://www.auth.cwl.ubc.ca/CWL_login_button.gif" width="76" height="25" alt="CWL Login" border="0">
+                        </a>
+                        <a id="cwl_login" href="/api/cas/login" ng-if="AuthTypesEnabled.cas && !AuthTypesEnabled.saml" ng-bind-html="LoginConfigurableHTML.cas">
+                            <img class="center-block" src="https://www.auth.cwl.ubc.ca/CWL_login_button.gif" width="76" height="25" alt="CWL Login" border="0">
+                        </a>
+                    </div>
+
+                    <hr ng-if="AuthTypesEnabled.app && (AuthTypesEnabled.cas || AuthTypesEnabled.saml)" />
+
+                    <div ng-show="AuthTypesEnabled.app">
+                        <h2 ng-if="AuthTypesEnabled.cas || AuthTypesEnabled.saml">Or use a ComPAIR account:</h2>
+                        <h2 ng-if="!AuthTypesEnabled.cas && !AuthTypesEnabled.saml && !AuthTypesEnabled.demo">Log in with your ComPAIR account:</h2>
+                        <h2 ng-if="!AuthTypesEnabled.cas && !AuthTypesEnabled.saml && AuthTypesEnabled.demo">Select the account type you want to demo:</h2>
+                        <p class="text-center" ng-if="AuthTypesEnabled.demo">
+                            <a href="" ng-click="createDemoAccount(SystemRole.sys_admin)">Admin</a>
+                            &nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a href="" ng-click="createDemoAccount(SystemRole.instructor)">Instructor</a>
+                            &nbsp;&nbsp;|&nbsp;&nbsp;
+                            <a href="" ng-click="createDemoAccount(SystemRole.student)">Student</a>
+                        </p>
+                        <hr ng-if="AuthTypesEnabled.demo" />
+                        <p>
+                            <a href="" ng-click="showAppLogin = !showAppLogin">
+                                <i class="fa fa-chevron-down" ng-show="showAppLogin"></i>
+                                <i class="fa fa-chevron-right" ng-hide="showAppLogin"></i>
+                                <span id="app-login-toggle" ng-if="!AuthTypesEnabled.demo">Log in with existing account</span>
+                                <span id="app-login-toggle" ng-if="AuthTypesEnabled.demo">Or log in with existing demo account</span>
+                            </a>
+                            <span ng-show="allowCreateUser">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="" ng-click="showCreateUserForm = true">Create new account</a></span>
+                        </p>
+                        <div ng-show="showAppLogin">
+                            <div class="form-group has-feedback"
+                                ng-class="{'has-error': loginForm.username.$invalid, 'has-success': loginForm.username.$valid}">
+                                <label for="inputUser" class="required-star">ComPAIR Username</label>
+                                <input type="text" id="inputUser" name="username"
+                                    ng-model="username" required placeholder=""
+                                    class="form-control">
+                            </div>
+                            <div class="form-group has-feedback"
+                                ng-class="{'has-error': loginForm.password.$invalid, 'has-success': loginForm.password.$valid}">
+                                <label for="inputPass" class="required-star">ComPAIR Password</label>
+                                <span ng-if="AuthTypesEnabled.demo">(Default: <i>demo</i>)</span>
+                                <input type="password" id="inputPass" name="password" ng-model="password" required
+                                        placeholder="" class="form-control">
+                            </div>
+                            <div class="alert alert-danger text-center" ng-show="login_err">Please double-check your username and password and try again.</div><br />
+                            <input type="submit" ng-disabled="loginForm.$invalid || submitted" class="btn btn-success center-block" ng-class="" value="Log In">
+                            <p ng-if="submitted" class="text-center" >
+                                <i class="fa fa-spin fa-spinner"></i>
+                                &nbsp; Logging in...
+                            </p>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="col-sm-6" ng-if="LoginConfigurableHTML.addition_instructions">
+                <span ng-bind-html="LoginConfigurableHTML.addition_instructions"></span>
+            </div>
+        </div>
+    </div>
+    <div ng-if="showCreateUserForm">
+        <p class="pull-right"><a href="" ng-click="$parent.showCreateUserForm = false;">Cancel</a></p>
+        <h2 class="text-center">Create ComPAIR account</h2>
+        <br />
+        <p class="intro-text">Please provide the required fields below to create your ComPAIR account.</p>
+        <login-create-user-form uses-compair-login="$parent.showComPAIRAccountFieldsCreateUserForm"></login-create-user-form>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<p class="assignment-toggle"><a href="" ng-click="showAssignment = !showAssignment">
+    <i class="fa fa-chevron-down" ng-show="showAssignment "></i>
+    <i class="fa fa-chevron-right" ng-hide="showAssignment "></i>
+    Show <span ng-if="answerComment">answer you're leaving feedback for by {{parent.user.displayname}}</span><span ng-if="!answerComment">description for assignment "{{assignment.name}}"</span>
+</a></p>
+
+<div ng-show="showAssignment" class="standalone-assignment">
+    <h2 ng-if="parent.name"><i class="fa fa-comments"></i> {{parent.name}}</h2>
+    <rich-content ng-if="parent.name" content="parent.description" attachment="parent.file"></rich-content>
+    <h2 ng-if="answerComment"><i class="fa fa-user"></i> {{parent.user.displayname}}'s Answer</h2>
+    <rich-content ng-if="answerComment" content="parent.content" attachment="parent.file"></rich-content>
+    <h2 ng-if="selfEvalComment"><i class="fa fa-comments"></i> {{assignment.name}}</h2>
+    <rich-content ng-if="selfEvalComment" content="assignment.description" attachment="assignment.file"></rich-content>
+</div>
+
+<div class="row evaluate-screen" ng-if="selfEvalComment">
+    <div class="col-md-12" >
+        <div class="answer-choice clearfix">
+            <h3 class="text-center"><compair-logo type="'scale'"></compair-logo> Your Answer</h3>
+            <rich-content content="parent.content" attachment="parent.file"></rich-content>
+        </div>
+    </div>
+</div>
+
+<form name="commentForm" class="form" ng-submit="commentSubmit()" confirm-form-exit novalidate form-type="comment">
+    <fieldset>
+        <legend><span ng-if="answerComment || selfEvalComment">Feedback</span><span ng-if="!answerComment && !selfEvalComment">Comment</span><span ng-if="!selfEvalComment"> Details</span></legend>
+        <div class="form-group">
+            <label ng-if="!selfEvalComment">Text</label>
+            <label ng-if="selfEvalComment" class="required-star">Your private feedback to yourself</label>
+            <textarea ng-model="comment.content" id="commentContent" class="form-control" rows="8"
+                      ckeditor="editorOptions" required>
+            </textarea>
+        </div>
+        <div class="form-group" ng-if="answerComment">
+            <input id="comment_type" type="checkbox" ng-model="comment.comment_type" ng-disabled="!(comment.comment_type == AnswerCommentType.public || comment.comment_type == AnswerCommentType.private)"
+                   ng-true-value="'{{AnswerCommentType.public}}'" ng-false-value="'{{AnswerCommentType.private}}'">
+            <label for="comment_type"><span class="text-muted not-bold" ng-if="!(comment.comment_type == AnswerCommentType.public || comment.comment_type == AnswerCommentType.private)">(cannot show this feedback to the whole class)</span> <span ng-if="comment.comment_type == AnswerCommentType.public || comment.comment_type == AnswerCommentType.private">Show this feedback to the whole class</span></label>
+
+        </div>
+    </fieldset>
+    <p class="text-center text-muted"><span class="required-star "></span> = required (please make sure these areas are filled in)</p>
+    <div class="form-group sub-step text-center" ng-show="comment.draft || preview">
+        <input type="submit" class="btn btn-default btn-lg" value="Save Draft"
+            ng-click="comment.draft = true"
+            ng-disabled="submitted" />
+        &nbsp;&nbsp;
+        <input type="submit" class="btn btn-success btn-lg" value="Submit"
+            ng-click="comment.draft = false"
+            ng-disabled="commentForm.$invalid || submitted" />
+    </div>
+    <div ng-show="!comment.draft && !preview">
+        <input type="submit" class="btn btn-success btn-lg center-block" value="Save"
+            ng-disabled="commentForm.$invalid || submitted" />
+    </div>
+</form>
