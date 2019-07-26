@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html ng-app = "myApp" auth-login class="ie9"><![endif]-->
+<html ng-app="myApp" auth-login>
+    <head>
+        <base href="/app/">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="{{ static_img_path }}black-favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="{{ static_img_path }}black-favicon-16x16.png" sizes="16x16" />
+	<!-- Javascript Libraries -->
+        <!-- font awesome CDN -->
+        <script src="https://use.fontawesome.com/5896577a49.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.5.11/ckeditor.js"></script>
+        <script src="//platform.twitter.com/widgets.js"></script>
+
+        <!-- build:prod_minify_js_libs -->
+        <script src="{nst{ bower_js_libs }}"></script>
+        <!-- endbuild -->
+
+        <!-- Non-Bower Managed Includes -->
+
+        <!-- ComPAIR Stylesheet -->
+        <!-- build:prod_compile_minify_css -->
+        <link rel="stylesheet" href="{{ compair_css }}">
+        <!-- endbuild -->
+
+        <!-- MathJax, should figure out how to bower manage this -->
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML&delayStartupUntil=configured"></script>
+        <script>
+            // config MathJax
+            MathJax.Hub.Config({
+                skipStartupTypeset: true
+            });
+            MathJax.Hub.Configured();
+
+            // config CKEDITOR
+            CKEDITOR.plugins.addExternal( 'combinedmath', '/app/lib_extension/ckeditor/plugins/combinedmath/' );
+            CKEDITOR.plugins.addExternal( 'autolink', '/app/lib_extension/ckeditor/plugins/autolink/' );
+            CKEDITOR.addCss( '@media screen and (-webkit-min-device-pixel-ratio:0) { .cke_editable { font-size: 16px !important; } }' );
+            CKEDITOR.on('dialogDefinition', function(ev) {
+                var dialogName = ev.data.name;
+                var dialog = ev.data.definition.dialog;
+                var dialogDefinition = ev.data.definition;
+
+                if (dialogName === 'link') {
+                    var target = dialogDefinition.getContents('target');
+                    target.get('linkTargetType')['default'] = '_blank';
+                }
+            });
+        </script>
+
+        <!-- build:prod_minify_js -->
+        <script src="{{ compair_js }}"></script>
+        <!-- endbuild -->
+
+        <script type="text/javascript">
+	</script>
+</head>
+    <body>
+
+    <!--[if lt IE 9 ]>
+    <div class="alert-warning">
+        <i class="fa fa-warning"></i>
+        This application only supports <strong>Internet Explorer 9 and higher</strong>. Please <a href="http://windows.microsoft.com/en-ca/internet-explorer/download-ie">upgrade your browser</a> or download <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a>, <a href="http://www.google.com/chrome/">Chrome</a>, or <a href="https://www.apple.com/ca/safari/">Safari</a> to use instead. Thank you!
+    </div>
+    <![endif]-->
+
+    <!-- Main Navbar -->
+    <navbar-component></navbar-component>
+    <ng-include src="'modules/route/route-error-partial.html'"></ng-include>
+
+    <!-- Toast Messages from AngularJS-Toaster -->
+    <toaster-container toaster-options="{'limit': 1, 'position-class': 'toast-top-full-width-opaque',  'prevent-duplicates': true}"></toaster-container>
+
+    <!-- Main Viewport, where all the module partials are shown -->
+    <div class="container">
+        <!-- ngView, should have it's own row and column css organization -->
+        <div ng-view="" autoscroll></div>
+    </div>
+    </body>
+</html>
+
