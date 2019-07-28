@@ -160,7 +160,8 @@ describe('assignment-module', function () {
         "user_id": "1abcABC123-abcABC123_Z",
         "pairing_algorithm": "random",
         "educators_can_compare": false,
-        "rank_display_limit": 10
+        "rank_display_limit": 10,
+		"variable2":".77"
     };
 
     var mockStudents = {

@@ -1495,7 +1495,7 @@ module.controller("AssignmentWriteController",
                 // copy criteria
                 criteria: originalAssignment.criteria,
                 // copy assignment data
-                name: "Some Name",//originalAssignment.name,
+                name: originalAssignment.name,
                 description: originalAssignment.description,
                 number_of_comparisons: originalAssignment.number_of_comparisons,
                 students_can_reply: originalAssignment.students_can_reply,
