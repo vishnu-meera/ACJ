@@ -877,7 +877,9 @@ module.controller("AssignmentViewController",
         $scope.loggedInUserId = resolvedData.loggedInUser.id;
         $scope.course = resolvedData.course;
         $scope.assignment = resolvedData.assignment;
+		$scope.testuserAnswers = resolvedData.userAnswers;
 		console.log("$scope.assignment ==>",$scope.assignment);
+		console.log("$scope.testuserAnswers ==>",$scope.testuserAnswers);
         $scope.canManageAssignment = resolvedData.canManageAssignment;
         $scope.allStudents = resolvedData.students.objects;
         $scope.allInstructors = resolvedData.instructors.objects;
