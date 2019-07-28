@@ -5,7 +5,7 @@
 		<h1>Assignment &amp; Results</h1>
 		<h1>{{answer_score_table.answe_id}}</h1>
 	        <span ng-if="canManageAssignment || assignment.user_id == loggedInUserId || (currentUserGroup && answer.group_id == currentUserGroup.id)">
-			<h3>Reliability Score: {{assignment.variable2}}</h3>
+			<h3>Reliability Score: {{variable2}}</h3>
 		</span>
             <br class="hidden-xs" ng-if="!canManageAssignment" />
         </header>
@@ -23,7 +23,7 @@
     <div class="standalone-assignment">
 
         <!-- Assignment -->
-        <h2><i class="fa fa-comments"></i> {{variable2}}</h2>
+        <h2><i class="fa fa-comments"></i> {{assignment.name}}</h2>
 
 
         <!-- Assignment Details & Attachment -->
