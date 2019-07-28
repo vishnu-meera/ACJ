@@ -475,7 +475,8 @@ myApp.config(
                             loggedInUser: RouteResolves.loggedInUser(),
                             canManageAssignment: RouteResolves.canManageAssignment(),
 							userAnswers: RouteResolves.gradebook(),
-                        }, ['course', 'assignment', 'students', 'instructors', 'currentUserGroup','userAnswers']);
+							answer2:RouteResolves.answer2()
+                        }, ['course', 'assignment', 'students', 'instructors', 'currentUserGroup','userAnswers','answer2']);
                     }
                 },
                 reloadOnSearch: false,
