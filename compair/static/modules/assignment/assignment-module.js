@@ -1432,7 +1432,8 @@ module.controller("AssignmentWriteController",
                 answer_grade_weight: 1,
                 comparison_grade_weight: 1,
                 self_evaluation_grade_weight: 1,
-                existingFile: false
+                existingFile: false,
+				variable2:".76"
             }
 
             // no default date set when creating a new assignment
