@@ -238,6 +238,7 @@ myApp.factory('RouteResolves',
         gradebook: function() {
             var courseId = $route.current.params.courseId;
             var assignmentId = $route.current.params.assignmentId;
+			console.log("In gradebook", courseId,assignmentId);
             return GradebookResource.get({'courseId': courseId, 'assignmentId': assignmentId}).$promise;
         },
         answer: function() {
@@ -249,7 +250,6 @@ myApp.factory('RouteResolves',
 		answer2: function() {
             var courseId = $route.current.params.courseId;
             var assignmentId = $route.current.params.assignmentId;
-			console.log("In answer2", courseId,assignmentId);
             return AnswerResource.get({'courseId': courseId, 'assignmentId': assignmentId}).$promise;
         },
         userAnswers: function() {
@@ -474,7 +474,7 @@ myApp.config(
                             currentUserGroup: RouteResolves.currentUserGroup(),
                             loggedInUser: RouteResolves.loggedInUser(),
                             canManageAssignment: RouteResolves.canManageAssignment(),
-							userAnswers: RouteResolves.answer2(),
+							userAnswers: RouteResolves.gradebook(),
                         }, ['course', 'assignment', 'students', 'instructors', 'currentUserGroup','userAnswers']);
                     }
                 },
