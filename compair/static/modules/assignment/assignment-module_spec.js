@@ -771,6 +771,7 @@ describe('assignment-module', function () {
     });
 
     describe('AssignmentViewController', function () {
+		console.log("AssignmentViewController");
         var $rootScope, createController, $uibModal, $q, $route;
         var controller;
         var toaster;
@@ -804,6 +805,7 @@ describe('assignment-module', function () {
                     loggedInUser: angular.copy(mockUser),
                     canManageAssignment: true,
                 });
+				console.log("controller view : " , controller)
                 $httpBackend.expectGET('/api/courses/1abcABC123-abcABC123_Z/assignments/1abcABC123-abcABC123_Z/status').respond({
                     "status": {
                         "answers": {
@@ -826,7 +828,7 @@ describe('assignment-module', function () {
                 $httpBackend.expectGET('/api/courses/1abcABC123-abcABC123_Z/assignments/1abcABC123-abcABC123_Z/answers?page=1&perPage=20').respond(mockAnswers);
                 $httpBackend.flush();
             });
-
+			console.log("rootscope assignment : ",$rootScope.assignment) 
             it('should be correctly initialized', function () {
                 var expectedInstructors = _.sortBy(angular.copy(mockInstructors.objects), 'name');
                 var expectedStudents = _.sortBy(angular.copy(mockStudents.objects), 'name');
@@ -835,7 +837,7 @@ describe('assignment-module', function () {
                     id: "top-picks",
                     name: "Instructor's top picks"
                 });
-
+				
                 expect($rootScope.assignment.id).toEqual(mockAssignment.id);
                 expect($rootScope.courseId).toEqual(mockCourse.id);
 
