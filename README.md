@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ComPAIR
 ==========
 
@@ -487,4 +486,4 @@ If you want to learn more about creating good readme files then refer the follow
 - [ASP.NET Core](https://github.com/aspnet/Home)
 - [Visual Studio Code](https://github.com/Microsoft/vscode)
 - [Chakra Core](https://github.com/Microsoft/ChakraCore)
->>>>>>> 6f8fe46486397d45ee7577b66ffb4ee65053189a
+

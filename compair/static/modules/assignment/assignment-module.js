@@ -1489,12 +1489,13 @@ module.controller("AssignmentWriteController",
         } else if ($scope.method == "copy") {
             var originalAssignment = $scope.assignment;
             $scope.originalAssignment = originalAssignment;
-
+			console.log("Scope of Method",$scope)
+			console.log("originalAssignment : ",originalAssignment)
             $scope.assignment = {
                 // copy criteria
                 criteria: originalAssignment.criteria,
                 // copy assignment data
-                name: originalAssignment.name,
+                name: "Some Name",//originalAssignment.name,
                 description: originalAssignment.description,
                 number_of_comparisons: originalAssignment.number_of_comparisons,
                 students_can_reply: originalAssignment.students_can_reply,
