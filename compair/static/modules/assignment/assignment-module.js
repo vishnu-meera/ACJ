@@ -869,6 +869,8 @@ module.controller("AssignmentViewController",
              GroupResource, GroupUserResource, AnswerCommentType, PairingAlgorithm, $uibModal,
              LearningRecordStatementHelper, WinningAnswer)
     {
+		console.log("AssignmentViewController ==>");
+		$scope.variable2 = ".7777777";
         $scope.courseId = $routeParams.courseId;
         $scope.assignmentId = $routeParams.assignmentId;
 

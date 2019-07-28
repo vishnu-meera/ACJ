@@ -219,6 +219,9 @@ myApp.factory('RouteResolves',
             return CourseResource.getInstructors({'id': courseId}).$promise;
         },
         assignment: function() {
+			console.log("Assignment function");
+			console.log("CouserID" , $route.current.params.courseId);
+			console.log("assignmentId" , $route.current.params.assignmentId);
             var courseId = $route.current.params.courseId;
             var assignmentId = $route.current.params.assignmentId;
             return AssignmentResource.get({'courseId': courseId, 'assignmentId': assignmentId}).$promise;
