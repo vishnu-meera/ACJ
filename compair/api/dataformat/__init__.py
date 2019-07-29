@@ -227,7 +227,8 @@ def get_assignment(restrict_user=True):
         'self_evaluation_grade_weight': fields.Integer,
 
         'modified': fields.DateTime(dt_format='iso8601', attribute=lambda x: replace_tzinfo(x.modified)),
-        'created': fields.DateTime(dt_format='iso8601', attribute=lambda x: replace_tzinfo(x.created))
+        'created': fields.DateTime(dt_format='iso8601', attribute=lambda x: replace_tzinfo(x.created)),
+        'rea_score': fields.Float
     }
 
 def get_answer(restrict_user=True, include_answer_author=True, include_score=True):

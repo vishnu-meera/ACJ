@@ -873,14 +873,10 @@ module.controller("AssignmentViewController",
 		$scope.variable2 = ".7777777";
         $scope.courseId = $routeParams.courseId;
         $scope.assignmentId = $routeParams.assignmentId;
-
         $scope.loggedInUserId = resolvedData.loggedInUser.id;
         $scope.course = resolvedData.course;
         $scope.assignment = resolvedData.assignment;
-		$scope.testuserAnswers = resolvedData.userAnswers;
-		$scope.answer2 = resolvedData.answer2;
-		console.log("$scope.assignment ==>",$scope.answer2);
-		console.log("$scope.testuserAnswers ==>",$scope.testuserAnswers);
+		console.log("assignment ==>",$scope.assignment);
         $scope.canManageAssignment = resolvedData.canManageAssignment;
         $scope.allStudents = resolvedData.students.objects;
         $scope.allInstructors = resolvedData.instructors.objects;
