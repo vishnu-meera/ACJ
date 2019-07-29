@@ -104,6 +104,7 @@ class AssignmentIdAPI(Resource):
             user=current_user,
             course_id=course.id,
             data={'id': assignment.id})
+
         return marshal(assignment, dataformat.get_assignment(restrict_user))
 
     @login_required
