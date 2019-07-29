@@ -1,6 +1,6 @@
 import datetime
 import dateutil.parser
-
+import sys
 from bouncer.constants import READ, EDIT, CREATE, DELETE, MANAGE
 from flask import Blueprint
 from flask_login import login_required, current_user, current_app
@@ -104,7 +104,7 @@ class AssignmentIdAPI(Resource):
             user=current_user,
             course_id=course.id,
             data={'id': assignment.id})
-
+        print('Hello world!', file=sys.stderr)
         return marshal(assignment, dataformat.get_assignment(restrict_user))
 
     @login_required
