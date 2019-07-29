@@ -870,13 +870,13 @@ module.controller("AssignmentViewController",
              LearningRecordStatementHelper, WinningAnswer)
     {
 		console.log("AssignmentViewController ==>");
-		$scope.variable2 = ".7777777";
         $scope.courseId = $routeParams.courseId;
         $scope.assignmentId = $routeParams.assignmentId;
         $scope.loggedInUserId = resolvedData.loggedInUser.id;
         $scope.course = resolvedData.course;
         $scope.assignment = resolvedData.assignment;
 		console.log("assignment ==>",$scope.assignment);
+		$scope.variable2 = $scope.assignment.rea_score;
         $scope.canManageAssignment = resolvedData.canManageAssignment;
         $scope.allStudents = resolvedData.students.objects;
         $scope.allInstructors = resolvedData.instructors.objects;
