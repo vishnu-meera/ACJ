@@ -241,7 +241,7 @@ def get_answer(restrict_user=True, include_answer_author=True, include_score=Tru
         'draft': fields.Boolean,
         'top_answer': fields.Boolean,
         'group_answer': fields.Boolean,
-
+        'variable2':fields.Float,
         'comment_count': fields.Integer,
         'private_comment_count': fields.Integer,
         'public_comment_count': fields.Integer,
