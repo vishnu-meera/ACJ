@@ -455,7 +455,7 @@ module.controller(
      "Session", "CourseResource", "Toaster", "UserResource", "LTI", "LearningRecordStatementHelper",
     function ($rootScope, $scope, $uibModalInstance, AssignmentResource,
               Session, CourseResource, Toaster, UserResource, LTI, LearningRecordStatementHelper) {
-
+        console.log("CourseSelectModalControllerCourseSelectModalController")
         $scope.submitted = false;
         $scope.totalNumCourses = 0;
         $scope.courseFilters = {
@@ -564,7 +564,7 @@ module.controller(
         $scope.showAssignments = false;
         $scope.submitted = false;
         $scope.format = 'dd-MMMM-yyyy';
-
+                console.log("CourseDuplicateControllerCourseDuplicateController")
         $scope.setupDuplicateCourse = function() {
             $scope.duplicateCourse = {
                 name: $scope.originalCourse.name,
@@ -832,7 +832,7 @@ module.controller(
     function($scope, $route, $routeParams, $location, Session,
              CourseResource, Toaster, EditorOptions, resolvedData)
     {
-        console.log("Course Controller")
+        console.log("CourseControllerCourseControllerCourseController")
         $scope.courseId = $routeParams.courseId;
         $scope.course = resolvedData.course || {};
         $scope.loggedInUserId = resolvedData.loggedInUser.id;
