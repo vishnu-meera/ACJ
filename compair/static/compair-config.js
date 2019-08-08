@@ -347,6 +347,7 @@ myApp.config(
                 controller: 'CourseController',
                 resolve: {
                     resolvedData: function() {
+                        console.log("Course config 1")
                         return ResolveDeferredRouteData({
                             loggedInUser: RouteResolves.loggedInUser(),
                         }, ['course']);
@@ -361,6 +362,7 @@ myApp.config(
                 controller: 'CourseAssignmentsController',
                 resolve: {
                     resolvedData: function() {
+                        console.log("Course config 2")
                         return ResolveDeferredRouteData({
                             course: RouteResolves.course(),
                             courseAssignments: RouteResolves.courseAssignments(),
@@ -381,6 +383,7 @@ myApp.config(
                 controller: 'CourseController',
                 resolve: {
                     resolvedData: function() {
+                        console.log("Course config 3")
                         return ResolveDeferredRouteData({
                             course: RouteResolves.course(),
                             loggedInUser: RouteResolves.loggedInUser(),
@@ -403,6 +406,7 @@ myApp.config(
                 controller: 'ClassViewController',
                 resolve: {
                     resolvedData: function() {
+                        console.log("Course config 4")
                         return ResolveDeferredRouteData({
                             course: RouteResolves.course(),
                             classlist: RouteResolves.classlist(),
@@ -422,6 +426,7 @@ myApp.config(
                 controller: 'ClassImportController',
                 resolve: {
                     resolvedData: function() {
+                        console.log("Course config 5")
                         return ResolveDeferredRouteData({
                             course: RouteResolves.course(),
                         }, ['course']);
@@ -466,6 +471,7 @@ myApp.config(
                 controller: 'AssignmentViewController',
                 resolve: {
                     resolvedData: function() {
+                        console.log("Course config 6")
                         return ResolveDeferredRouteData({
                             course: RouteResolves.course(),
                             assignment: RouteResolves.assignment(),
