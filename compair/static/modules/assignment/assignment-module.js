@@ -871,12 +871,12 @@ module.controller("AssignmentViewController",
     {
         console.log("AssignmentViewController ==>");
         console.log("CourseAssignmentsController")
+        console.log("assignment ==>",$scope.assignment);
         $scope.courseId = $routeParams.courseId;
         $scope.assignmentId = $routeParams.assignmentId;
         $scope.loggedInUserId = resolvedData.loggedInUser.id;
         $scope.course = resolvedData.course;
         $scope.assignment = resolvedData.assignment;
-		console.log("assignment ==>",$scope.assignment);
 		$scope.variable2 = $scope.assignment.assgnmt_reliab_score;
         $scope.canManageAssignment = resolvedData.canManageAssignment;
         $scope.allStudents = resolvedData.students.objects;
