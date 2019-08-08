@@ -219,7 +219,6 @@ myApp.factory('RouteResolves',
             return CourseResource.getInstructors({'id': courseId}).$promise;
         },
         assignment: function() {
-			console.log("Assignment function");
 			console.log("CouserID" , $route.current.params.courseId);
             var courseId = $route.current.params.courseId;
             var assignmentId = $route.current.params.assignmentId;
