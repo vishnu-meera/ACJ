@@ -869,7 +869,8 @@ module.controller("AssignmentViewController",
              GroupResource, GroupUserResource, AnswerCommentType, PairingAlgorithm, $uibModal,
              LearningRecordStatementHelper, WinningAnswer)
     {
-		console.log("AssignmentViewController ==>");
+        console.log("AssignmentViewController ==>");
+        console.log("CourseAssignmentsController")
         $scope.courseId = $routeParams.courseId;
         $scope.assignmentId = $routeParams.assignmentId;
         $scope.loggedInUserId = resolvedData.loggedInUser.id;
