@@ -1,0 +1,1000 @@
+  452  vi login.py
+  453  sudo docker-compose up -d
+  454  cs scripts
+  455  cd scripts
+  456  dir
+  457  cd ..
+  458  dir
+  459  cd scripts
+  460  dir
+  461  vi generate_correlation_reports.py
+  462  docker-compose up -d
+  463  sudo bash
+  464  cd compair/
+  465  cd static/
+  466  cd modules/
+  467  cd report/
+  468  dir
+  469  vi report-create-partial.html 
+  470  cd ..
+  471  docker-compose up -d
+  472  sudo docker-compose up -d
+  473  cd compair/
+  474  cd static/
+  475  cd modules/
+  476  cd report/
+  477  dir
+  478  vi report-create-partial.html 
+  479  cd ..
+  480  docker-compose up -d
+  481  sudo docker-compose up -d
+  482  cd compair/
+  483  cd static/
+  484  dir
+  485  vi compair-config.js 
+  486  [B
+  487  cd ..
+  488  docker-compose up -d
+  489  sudo docker-compose up -d
+  490  cd compair/
+  491  cd static/
+  492  dir
+  493  vi compair-config.js 
+  494  cd ..
+  495  sudo docker-compose up -d
+  496  cd compair/
+  497  cd static/
+  498  cd modules/
+  499  dir
+  500  cd assignment/
+  501  dir
+  502  vi assignment-view-partial.html 
+  503  cd ..
+  504  sudo docker-compose up -d
+  505  cd compair/
+  506  cd data/
+  507  cd ..
+  508  cd compair/
+  509  cd data
+  510  dir
+  511  cd ..
+  512  cd .data/
+  513  cd persistent/
+  514  dir
+  515  cd report/
+  516  dir
+  517  vi Course-participation--2019-07-24--22-02-53.csv
+  518  vi ComPAIR\ Demo\ Course-participation--2019-07-24--22-02-53.csv
+  519  sudo bash
+  520  docker exec -it compair_db_1 mysql -uroot -p
+  521  cd compair/
+  522  dir
+  523  cd templates/
+  524  vi newindex.html
+  525  cd ..
+  526  docker-compose up -d
+  527  sudo docker-compose up -d
+  528  docker ps
+  529  docker exec -it compair_db_1 mysql -uroot -p
+  530  sudo docker exec -it compair_db_1 mysql -uroot -p
+  531  cd compair/
+  532  cd static/
+  533  cd modules/
+  534  dir
+  535  cd assignment/
+  536  vi assignment-view-partial.html 
+  537  cd ..
+  538  cd compair/
+  539  cd static/
+  540  cd modules/
+  541  cd assignment/
+  542  vi assignment-view-partial.html 
+  543  cd compair/
+  544  cd static/
+  545  cd modules/
+  546  cd assignment/
+  547  vi assignment-view-partial.html 
+  548  cd ..
+  549  sudo docker exec -it compair_db_1 mysql -uroot -p
+  550  ls 
+  551  cd home
+  552  dir
+  553  ./ score.py
+  554  dir
+  555  score.py
+  556  ipython
+  557  apt install ipython
+  558  ipython 
+  559  pip install numpy
+  560  apt install python-pip
+  561  ipython
+  562  import numpy
+  563  pip install numpy
+  564  ipython
+  565  $ pip install mysql-connector-python-rf
+  566  $ pip install mysql-connector
+  567  pip install mysql-connector
+  568  ipython
+  569  pip install mysql-connector-python
+  570  ipython
+  571  pip install mysql-connector==2.1.6
+  572  pip install mysql-connector==2.2.9
+  573  mysql-connector --v
+  574  mysql-connector -v
+  575  exit
+  576  cd compair/
+  577  cd static/
+  578  cd modules/
+  579  cd assignment/
+  580  vi assignment-view-partial.html 
+  581  sudo bash
+  582  cd compair/
+  583  cd static/
+  584  cd modules/
+  585  cd assignment/
+  586  vi assignment-view-partial.html 
+  587  ipython
+  588  sudo apt-get libmariadbclient-dev
+  589  python setup.py install
+  590  ipython
+  591  docker exec -it compair_db_1 mysql -uroot -p
+  592  ipython
+  593  pip install MySQLdb
+  594  apt-get install python-mysqldb
+  595  ipython
+  596  docker exec -it compair_db_1 mysql -uroot -p
+  597  ipython
+  598  sudo docker login --username sharmilam
+  599  ipython
+  600  sudo docker login --username sharmilam
+  601  ipython
+  602  ls
+  603  ipython
+  604  mysql -u root -prandompassword -h127.0.0.1
+  605  docker exec -it compair_db_1 mysql -uroot -p
+  606  docker run --name=mysql
+  607  docker run --name=mysql --env="MYSQL_ROOT_PASSWORD=randompassword" -p 3306:3306 -d mysql:latest
+  608  pip install sqlalchemy
+  609  pip install pymysql
+  610  ipython
+  611  docker-compose exec mysql bash
+  612  cd compair 
+  613  docker-compose exec mysql bash
+  614  docker-compose exec mariadb bash
+  615  cd compair 
+  616  docker-compose exec mariadb bash
+  617  docker-compose exec mysql bash
+  618  ipython
+  619  cd ..
+  620  ipython
+  621  cd ..
+  622  ipython
+  623  helm install --name my-release stable/mysql
+  624  snap install helm
+  625  snap install helm --classic
+  626  helm install --name my-release stable/mysql
+  627  helm install --name my-release stable/mariadb
+  628  ipython
+  629  cd etc
+  630  cd home
+  631  dir
+  632  ls -la
+  633  cd root
+  634  mysql
+  635  python
+  636  ipython
+  637  python
+  638  ipython
+  639  docker ps 
+  640  cd compair 
+  641  ls -la
+  642  cd .. 
+  643  dir
+  644  cp score.py compair/compair/score.py
+  645  cd compair 
+  646  dir 
+  647  cp score.py compair/score.py
+  648  cd .. 
+  649  cp score.py compair/score.py
+  650  cp compair/compair/score.py compair/score.py
+  651  cd ..
+  652  cp compair/compair/score.py compair/score.py
+  653  cd compair 
+  654  ipython 
+  655  cd .. 
+  656  docker ps
+  657  sudo bash 
+  658  docker ps 
+  659  docker ps 
+  660  cd compair 
+  661  docker ps 
+  662  cd compair 
+  663  docker ps 
+  664  sudo dash 
+  665  sudo bash 
+  666  ipython
+  667  cd compair 
+  668  ipython 
+  669  docker exec -it compair_db_1 mysql -uroot -p[B
+  670  docker ps 
+  671  docker-compose port mysql
+  672  docker-compose port mysql 3306
+  673  docker-machine ip EdgeVM
+  674  snap install docker
+  675  docker-machine ip EdgeVM
+  676  docker-machine ls
+  677  ipython 
+  678  dir *py
+  679  ls
+  680  cat settings.py
+  681  ls
+  682  gvim
+  683  apt install vim
+  684  vim score.py
+  685  docker-machine ls
+  686  docker ps 
+  687  cd ..
+  688  docker ps 
+  689  ls
+  690  cd compair/compair/
+  691  ls
+  692  docker ps 
+  693  hostname
+  694  docker-machine ls
+  695  docker-compose port mysql 3306
+  696  set -o vi
+  697  docker ps
+  698  exit
+  699  sudo bash]
+  700  sudo bash
+  701  docker ls
+  702  docker ps
+  703  where docker
+  704  whereis docker
+  705  /usr/lib/docker ps
+  706  ls -l /usr/bin/docker
+  707  sudo bash
+  708  docker ps
+  709  sudo docker login --username sharmilam
+  710  docker ps 
+  711  docker ls 
+  712  docker exec -it compair_db_1 mysql -uroot -p
+  713  yum install lapack-devel atlas-devel
+  714  git clone git@github.com:ubc/compair.git compair
+  715  ls
+  716  cd compair 
+  717  ls
+  718  cd compair 
+  719  cd .. 
+  720  npm install 
+  721  node_modules/gulp/bin/gulp.js
+  722  node_modules/gulp/bin/gulp.js prod
+  723  docker-compose up -d
+  724  docker exec -it compair_app_1 python manage.py database create -s
+  725  set -o vi
+  726  netstat -an
+  727  ps | more
+  728  ps -l
+  729  ps -p
+  730  ps -a
+  731  ps --help all
+  732  ps --all
+  733  ps -a
+  734  man ps
+  735  ps -U root
+  736  docker ps
+  737  docker info
+  738  whereis docker
+  739  ls /etc/docker/
+  740  docker ps
+  741  where docker-init
+  742  whereis docker-init
+  743  vim /usr/bin/docker-init 
+  744  ps -aux | More
+  745  ps -aux | more
+  746  ps -aux | grep docker
+  747  vim /var/run/docker/containerd/containerd.toml
+  748  /usr/bin/docker ps
+  749  /usr/bin/docker image ls
+  750  docker-compose start
+  751  docker-compose up
+  752  reboot
+  753  sudo
+  754  sudo bash
+  755  docker ps
+  756  docker-compose up
+  757  cd compair/compair/
+  758  docker-compose up
+  759  docker ps
+  760  ipython
+  761  vim score.py
+  762  docker ps
+  763  set -o vi
+  764  /maria
+  765  cd ..
+  766  vim score.py
+  767  ls
+  768  ls compair/
+  769  cd compair/
+  770  whoami
+  771  vim score.py 
+  772  docker ps
+  773  mysql
+  774  mysql -?
+  775  docker ps
+  776  mysql -p 3306
+  777  mysql -p 13306
+  778  mysql -P 13306 -p randompassword -h 127.0.0.1
+  779  mysql -P 13306 -p randompassword -h localhost -u root
+  780  mysql -P 13306 -password=randompassword -h localhost -u root
+  781  mysql -P 3306 -password=randompassword -h localhost -u root
+  782  mysql -P 3306 -password=randompassword -h localhost 
+  783  cd ..
+  784  mysql -P 3306 -password=randompassword -h localhost 
+  785  cd compair/
+  786  vim score.py 
+  787  docker-machine
+  788  docker-machine ls
+  789  docker ps
+  790  docker-compose ps
+  791  mysql -P 3306 -password=randompassword -h compair_db_1
+  792  mysql -P 3306 -password=randompassword -h 127.0.0.1
+  793  mysql -P 3306 --password=randompassword -h 127.0.0.1
+  794  mysql -P 3306 -h 127.0.0.1
+  795  mysql -P 13306 -h 127.0.0.1
+  796  docker-inspect compair_db_1
+  797  docker inspect compair_db_1
+  798  mysql -P 3306 -u=compair -h 127.0.0.1
+  799  mysql -P 3306 -u=compair -p=compair
+  800  cls
+  801  mysql -P 13306 -u=compair -h 172.20.0.3
+  802  mysql -P 3306 -u=compair -h 172.20.0.3
+  803  mysql -P 3306 -h 172.20.0.3
+  804  mysql -P 3306 -h 172.20.0.3 -p
+  805  notepad
+  806  vim score.py 
+  807  ipython score.py
+  808  vim score.py 
+  809  ipython score.py
+  810  docker inspect compair_db_1
+  811  docker ps
+  812  cp score.py backup.py
+  813  vim score.py
+  814  ipython score.py
+  815  ipconfig
+  816  ifconfing
+  817  ifconfig /all
+  818  ifconfig 
+  819  docker ps
+  820  head score.py
+  821  head backup.py
+  822  mysql -P 3306 -h 172.20.0.3 -p
+  823  mysql -P 3306 -u=compair -h 127.0.0.1
+  824  ipython 
+  825  head score.py
+  826  ipython
+  827  pip install pandas
+  828  ipython
+  829  cd compair/compair/
+  830  sudo bash
+  831  set -o vi
+  832  docker exec -it compair_db_1 mysql -uroot -p
+  833  ipython
+  834  cd compair/
+  835  cd ..
+  836  dir
+  837  cd compair/
+  838  dir
+  839  cd compair/
+  840  dir
+  841  ls -l
+  842  git init
+  843  git remot -v
+  844  git remote -v
+  845  docker exec -i compair_db_1 mysql -uroot -p
+  846  sudo docker exec -i compair_db_1 mysql -uroot -p
+  847  sudo docker exec -it compair_db_1 mysql -uroot -p
+  848  cd compair/
+  849  git remote set-url origin https://terawe.visualstudio.com/DefaultCollection/ACJ_EDU/_git/ACJ_EDU
+  850  git remote -v
+  851  git add .
+  852  git status
+  853  git commit -m "First Commit"
+  854  git status
+  855  git push -u origin master 
+  856  git config
+  857  git config --global --edit
+  858  git status
+  859  git pull
+  860  cls
+  861  clear
+  862  ls -l
+  863  git status
+  864  git push -u origin master 
+  865  clear
+  866  git config --get remote.origin.url
+  867  git config --list
+  868  git config [--global]
+  869  git config [--global] user.name "Sharmila Muralidharan"
+  870  sudo git push -u origin master 
+  871  cd ..
+  872  sudo
+  873  ls -l
+  874  cd compair/
+  875  clears
+  876  clear
+  877  git config --global --add user.name "Sharmila Muralidharan"
+  878  git config --global --add user.email "sharmilam@terawe.com"
+  879  git config --global --list
+  880  git push -u origin master 
+  881  git config --global --list
+  882  git push -u origin master 
+  883  git config --list
+  884  git push -u origin master 
+  885  git remote -v
+  886  cd ..
+  887  mkdir temp
+  888  cd temp
+  889  git clone https://terawe.visualstudio.com/DefaultCollection/ACJ_EDU/_git/ACJ_EDU
+  890  git clone terawe@vs-ssh.visualstudio.com:v3/terawe/ACJ_EDU/ACJ_EDU
+  891  git clone https://terawe.visualstudio.com/DefaultCollection/ACJ_EDU/_git/ACJ_EDU
+  892  git remote -v
+  893  clear
+  894  cd ../compair/
+  895  clear
+  896  git remote -v
+  897  git
+  898  git status
+  899  git commit -m "temp commit"
+  900  git push
+  901  clear
+  902  ls -l
+  903  cd ..
+  904  ls -l
+  905  cd ..
+  906  ls -l
+  907  cd root
+  908  sudo -v
+  909  cd ..
+  910  ls -l
+  911  cd dev/
+  912  cd ..
+  913  cd home/
+  914  ls -l
+  915  cd azureuser/
+  916  cd compair/
+  917  cls
+  918  clear
+  919  git status
+  920  ls  -l
+  921  git remote -v
+  922  get remove show origin
+  923  get remote show origin
+  924  git remote show origin
+  925  cd ..
+  926  ls -l
+  927  ls -la
+  928  cd .ssh
+  929  ls -la
+  930  cd ..
+  931  ssh-keygen 
+  932  ls -l
+  933  cd .ssh
+  934  ls -l
+  935  cat id_rsa.pub 
+  936  cd ..
+  937  ls -l
+  938  git terawe@vs-ssh.visualstudio.com:v3/terawe/ACJ_EDU/ACJ_EDU
+  939  git clone terawe@vs-ssh.visualstudio.com:v3/terawe/ACJ_EDU/ACJ_EDU
+  940  ls -l
+  941  cd ACJ_EDU/
+  942  ls -la
+  943  git remote -v
+  944  cd ../compair/
+  945  git remote -v
+  946  git remote set-url origin terawe@vs-ssh.visualstudio.com:v3/terawe/ACJ_EDU/ACJ_EDU
+  947  git remote -v
+  948  git pull
+  949  ls -l11
+  950  git pull --allow-unrelated-histories
+  951  cat .gitignore
+  952  git checkout .gitignore
+  953  git checkout --ours .gitignore
+  954  git status
+  955  cat .gitignore 
+  956  git add .
+  957  git commit -m" gitigonre commit"
+  958  git status
+  959  git pull --allow-unrelated-histories
+  960  git status
+  961  git checkout --ours README.md
+  962  git checkout --ours .gitignore
+  963  git status
+  964  git commit -am" gitigonre commit"
+  965  git pull --allow-unrelated-histories
+  966  git push -u origin master 
+  967  cd compair/
+  968  dir
+  969  cd compair/
+  970  cd static/
+  971  cd modules/
+  972  cd assignment/
+  973  vi assignment-module.js
+  974  vi assignment-view-partial.html 
+  975  vi assignment-module.js
+  976  cd compair/
+  977  git remote v
+  978  git remote -v
+  979  docker exec -it compair_db_1 -uroot -p
+  980  sudo docker exec -it compair_db_1 -uroot -p
+  981  cd compair/
+  982  sudo docker exec -it compair_db_1 -uroot -p
+  983  sudo docker mysql exec -it compair_db_1 -uroot -p
+  984  sudo docker exec -it compair_db_1 mysql -uroot -p
+  985  cd ..
+  986  ls -l
+  987  cd compair/static/modules/
+  988  ls -l
+  989  cd assignment/
+  990  ls -l
+  991  vi assignment-module.js 
+  992  cd ..
+  993  docker restart compair_app_1
+  994  sudo docker restart compair_app_1
+  995  cd ..
+  996  sudo docker restart compair_app_1
+  997  cd compair/
+  998  ls -l
+  999  docker-compose up -d
+ 1000  sudo docker login --username sharmilam
+ 1001  sudo docker restart compair_app_1
+ 1002  docker-compose up -d
+ 1003  cd compair/
+ 1004  docker-compose up -d
+ 1005  ls -l
+ 1006  cd ..
+ 1007  ls -l
+ 1008  docker-compose up -d
+ 1009  sudp docker-compose up -d
+ 1010  sudo docker-compose up -d
+ 1011  cd compair/static/modules/assignment/
+ 1012  ls -l
+ 1013  vi assignment-module.js
+ 1014  vi +1497 assignment-module.js
+ 1015  cd ..
+ 1016  cd .
+ 1017  cd ..
+ 1018  ls- l
+ 1019  ls -l
+ 1020  cat Dockerfile 
+ 1021  docker ps
+ 1022  sudo docker ps
+ 1023  sudo docker restart compar_web_1
+ 1024  sudo docker restart compair_web_1
+ 1025  ls -l
+ 1026  git status
+ 1027  git commit -m "simple edit"
+ 1028  git add .
+ 1029  git commit -m "simple edit"
+ 1030  git status
+ 1031  git reset
+ 1032  git status
+ 1033  git push --force
+ 1034  sudo git push --force
+ 1035  git pull origin master 
+ 1036  git pull origin master --allow-unrelated-histories
+ 1037  git checkout --theirs .
+ 1038  git commit -m "syncing all chnages"
+ 1039  git add .
+ 1040  git merge
+ 1041  git checkout --theirs .
+ 1042  git status
+ 1043  git add .
+ 1044  git commit -m "syncing all chnages"
+ 1045  git pull origin master 
+ 1046  git push -u origin master 
+ 1047  git status
+ 1048  rm -r .git
+ 1049  rm -rf mydir
+ 1050  ls -l
+ 1051  git status
+ 1052  git init
+ 1053  git add .
+ 1054  git commit -m "second commit"
+ 1055  cd ..
+ 1056  cd ACJ_EDU/
+ 1057  git remote -v
+ 1058  cd ../compair/
+ 1059  git remote set-url origin terawe@vs-ssh.visualstudio.com:v3/terawe/ACJ_EDU/ACJ_EDU
+ 1060  git remote set-url  terawe@vs-ssh.visualstudio.com:v3/terawe/ACJ_EDU/ACJ_EDU
+ 1061  git remote set-url origin terawe@vs-ssh.visualstudio.com:v3/terawe/ACJ_EDU/ACJ_EDU
+ 1062  git remote add origin terawe@vs-ssh.visualstudio.com:v3/terawe/ACJ_EDU/ACJ_EDU
+ 1063  git pull
+ 1064  git branch --set-upstream-to=origin master 
+ 1065  git remote -v
+ 1066  git pull
+ 1067  git pull origin master 
+ 1068  git pull origin master --allow-unrelated-histories
+ 1069  git status
+ 1070  git push -u origin master 
+ 1071  cd compair/
+ 1072  clear
+ 1073  ls -l
+ 1074  sudo docker exec -it compair_db_1 mysql -uroot -p
+ 1075  cd compair/
+ 1076  docker exec -it compair_db_1 mysql -uroot -p
+ 1077  cd ..
+ 1078  clear
+ 1079  docker exec -it compair_db_1 mysql -uroot -p
+ 1080  sudo docker exec -it compair_db_1 mysql -uroot -p
+ 1081  cd compair/
+ 1082  sudo docker exec -it compair_db_1 mysql -uroot -p
+ 1083  git status
+ 1084  git pull origin master 
+ 1085  git status
+ 1086  sudo docker exec -it compair_db_1 mysql -uroot -p
+ 1087  git pull origin master 
+ 1088  cd compair/
+ 1089  git pull origin master 
+ 1090  sudo docker exec -it compair_db_1 mysql -uroot -p
+ 1091  cd compair/
+ 1092  git pull origin master 
+ 1093  cd compair/
+ 1094  git pull origin master 
+ 1095  sudo docker exec -it compair_db_1 mysql -uroot -p
+ 1096  cd compair/
+ 1097  git pull origin master 
+ 1098  clear
+ 1099  sudo docker exec -it compair_db_1 mysql -uroot -p
+ 1100  cd compair/
+ 1101  git pull origin  master 
+ 1102  cd compair/
+ 1103  sudo docker exec -it compair_db_1 mysql -uroot -p
+ 1104  clear
+ 1105  curl https;//localhost:8080/api/courses/hQSymIYKTFarHl0qPUZ3zA/assignments/G_MtIrw3Q-a1OtzfU_F4KQ/gradebook
+ 1106  curl https;//localhost:8888/api/courses/hQSymIYKTFarHl0qPUZ3zA/assignments/G_MtIrw3Q-a1OtzfU_F4KQ/gradebook
+ 1107  curl http;//localhost:8888/api/courses/hQSymIYKTFarHl0qPUZ3zA/assignments/G_MtIrw3Q-a1OtzfU_F4KQ/gradebook
+ 1108  su curl https;//localhost:8888/api/courses/hQSymIYKTFarHl0qPUZ3zA/assignments/G_MtIrw3Q-a1OtzfU_F4KQ/gradebook
+ 1109  sudo curl https;//localhost:8888/api/courses/hQSymIYKTFarHl0qPUZ3zA/assignments/G_MtIrw3Q-a1OtzfU_F4KQ/gradebook
+ 1110  cd compair/
+ 1111  sudo curl https;//localhost:8888/api/courses/hQSymIYKTFarHl0qPUZ3zA/assignments/G_MtIrw3Q-a1OtzfU_F4KQ/gradebook
+ 1112  clear
+ 1113  ps -A
+ 1114  cd compair/
+ 1115  clear
+ 1116  ls -l
+ 1117  cat Dockerfile 
+ 1118  git pull origin master 
+ 1119  clear
+ 1120  ls -l
+ 1121  ps -A
+ 1122  clear
+ 1123  python manage.py runserver
+ 1124  git status
+ 1125  docker ps
+ 1126  sudo docker ps
+ 1127  sudo docker restart compair_app_1
+ 1128  sudo docker stop compair_app_1
+ 1129  sudo docker-compose stop
+ 1130  su docker-compose stop
+ 1131  sudo docker-compose stop
+ 1132  git pull origin master 
+ 1133  sudo docker exec -it compair_db_1 mysql -uroot -p
+ 1134  clear
+ 1135  sudo docker exec -it compair_db_1 mysql -uroot -p
+ 1136  cd compair/
+ 1137  git pull origin  master 
+ 1138  sudo docker exec -it compair_db_1 mysql -uroot -p
+ 1139  cd compair/
+ 1140  git status
+ 1141  git pull origin  master 
+ 1142  az
+ 1143  curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+ 1144  az
+ 1145  clear
+ 1146  cd compair/
+ 1147  az login
+ 1148  az group create --name ACJRG --location "West US"
+ 1149  az acr create --name compairregistry --resource-group ACJRG --sku Basic --admin-enabled true
+ 1150  az acr show
+ 1151  az acr show --name compairregistry
+ 1152  cd compair/
+ 1153  ls -l
+ 1154  az login
+ 1155  az acr credential show --name compairresgistry
+ 1156  sudo az acr credential show --name compairresgistry
+ 1157  sudo az acr credential show --name compairresgistr01y
+ 1158  az acr credential show --name compairregistry
+ 1159  docker login compairregistry.azurecr.io --username compairregistry
+ 1160  sudo docker login compairregistry.azurecr.io --username compairregistry
+ 1161  sudo docker tag compairimage compairregistry.azurecr.io/mydockerimage:v1.0.0
+ 1162  ls -l
+ 1163  sudo docker build --tag compairimage
+ 1164  docker build --tag compairimage .
+ 1165  sudo docker build --tag compairimage .
+ 1166  sudo docker tag compairimage compairregistry.azurecr.io/mydockerimage:v1.0.0
+ 1167  sudo docker push compairregistry.azurecr.io/mydockerimage:v1.0.0
+ 1168  az acr repository list -n compairregistry
+ 1169  az appservice plan create --name myAppServicePlan --resource-group ACJRJ --sku B1 --is-linux
+ 1170  az appservice plan create --name myAppServicePlan --resource-group ACJRG --sku B1 --is-linux
+ 1171  az appservice plan create --name myAppServicePlanB2 --resource-group ACJRG --sku B2 --is-linux
+ 1172  az webapp create --resource-group ACJRG --plan myAppServicePlanB2 --name acjwebapp --deployment-container-image-name compairregistry.azurecr.io/mydockerimage:v1.0.0
+ 1173  az webapp config container set --name acjwebapp --resource-group ACJRG --docker-custom-image-name compairregistry.azurecr.io/mydockerimage:v1.0.0 --docker-registry-server-url https://compairregistry.azurecr.io --docker-registry-server-user compairregistry --docker-registry-server-password B0FlVEuSXhUN=e6YSdGDpfVgrYuTrGxU
+ 1174  ls -l
+ 1175  sudo docker login compairregistryunicorn.azurecr.io --username compairregistryunicorn
+ 1176  sudo docker tag compairimage compairregistryunicorn.azurecr.io/mydockerimage:v1.0.0
+ 1177  sudo docker push compairregistryunicorn.azurecr.io/mydockerimage:v1.0.0
+ 1178  sudo bash 
+ 1179  cd compair 
+ 1180  ipython 
+ 1181  sudo bash
+ 1182  cd compair 
+ 1183  cd ..
+ 1184  docker exec -it compair_db_1 mysql -uroot -p
+ 1185  cd compair 
+ 1186  exit 
+ 1187  cd compair/
+ 1188  clear
+ 1189  sudo bash
+ 1190  exit 
+ 1191  sudo bash
+ 1192  docker exec -it compair_db_1 mysql -uroot -p
+ 1193  sudo bash
+ 1194  sudo bash
+ 1195  cd compair 
+ 1196  %run score.py
+ 1197  run score.py
+ 1198  ipython
+ 1199  docker exec -it compair_db_1 mysql -uroot -p
+ 1200  ipython
+ 1201  cat score.py 
+ 1202  ipython ./score.py 
+ 1203  vim score.py 
+ 1204  ipython ./score.py 
+ 1205  docker exec -it compair_db_1 mysql -uroot -p
+ 1206  vim score.py 
+ 1207  set -o vi
+ 1208  ipython ./score.py 
+ 1209  vim score.py 
+ 1210  ipython ./score.py 
+ 1211  cp score.py score_course.py
+ 1212  exit
+ 1213  cd compair 
+ 1214  cd compair
+ 1215  docker exec -it compair_db_1 mysql -uroot -p
+ 1216  ipython
+ 1217  docker exec -it compair_db_1 mysql -uroot -p
+ 1218  ipython
+ 1219  docker exec -it compair_db_1 mysql -uroot -p
+ 1220  ipython
+ 1221  docker exec -it compair_db_1 mysql -uroot -p
+ 1222  ipython
+ 1223  docker exec -it compair_db_1 mysql -uroot -p
+ 1224  ipython
+ 1225  docker exec -it compair_db_1 mysql -uroot -p
+ 1226  exit
+ 1227  sudo bash
+ 1228  docker exec -it compair_db_1 mysql -uroot -p
+ 1229  sudo bash
+ 1230  exit
+ 1231  sudo bash
+ 1232  docker exec -it compair_db_1 mysql -uroot -p
+ 1233  cd compair 
+ 1234  ipython 
+ 1235  docker exec -it compair_db_1 mysql -uroot -p
+ 1236  ipython
+ 1237  docker exec -it compair_db_1 mysql -uroot -p
+ 1238  ipython
+ 1239  docker exec -it compair_db_1 mysql -uroot -p
+ 1240  ipython
+ 1241  docker exec -it compair_db_1 mysql -uroot -p
+ 1242  sudo bash
+ 1243  cd compair 
+ 1244  ipython 
+ 1245  docker exec -it compair_db_1 mysql -uroot -p
+ 1246  ipython
+ 1247  docker exec -it compair_db_1 mysql -uroot -p
+ 1248  ipython
+ 1249  docker exec -it compair_db_1 mysql -uroot -p
+ 1250  ipython
+ 1251  docker exec -it compair_db_1 mysql -uroot -p
+ 1252  ipython
+ 1253  docker exec -it compair_db_1 mysql -uroot -p
+ 1254  sudo bash
+ 1255  cd compair 
+ 1256  ipython
+ 1257  docker exec -it compair_db_1 mysql -uroot -p
+ 1258  ipython
+ 1259  cd compair 
+ 1260  ipython
+ 1261  docker exec -it compair_db_1 mysql -uroot -p
+ 1262  ipython
+ 1263  docker exec -it compair_db_1 mysql -uroot -p
+ 1264  ipython
+ 1265  docker exec -it compair_db_1 mysql -uroot -p
+ 1266  ipython
+ 1267  docker exec -it compair_db_1 mysql -uroot -p
+ 1268  ipython
+ 1269  docker exec -it compair_db_1 mysql -uroot -p
+ 1270  ipython
+ 1271  exit
+ 1272  sudo bash
+ 1273  docker exec -it compair_db_1 mysql -uroot -p
+ 1274  sudo bash
+ 1275  docker exec -it compair_db_1 mysql -uroot -p
+ 1276  cd compair 
+ 1277  ipython
+ 1278  docker exec -it compair_db_1 mysql -uroot -p
+ 1279  ipython
+ 1280  docker exec -it compair_db_1 mysql -uroot -p
+ 1281  clear
+ 1282  ssh azureuser@mseducomp.westus2.cloudapp.azure.com
+ 1283  randompassword
+ 1284  ssh azureuser@mseducomp.westus2.cloudapp.azure.com
+ 1285  sudo docker exec -it compair_db_1 mysql -uroot -p
+ 1286  cd compair/
+ 1287  sudo docker login --username sharmilam
+ 1288  sudo docker exec -it compair_app_1 /bin/bash
+ 1289  docker container ls
+ 1290  sudo docker container ls
+ 1291  sudo docker container start
+ 1292  sudo docker container start ed032f394541
+ 1293  sudo docker container start a9fd9efe79dc
+ 1294  sudo docker exec -it compair_app_1 /bin/bash
+ 1295  sudo docker container start c8672bebccbb18df622eb1670a255ebfb16b7ce59b6365441a91006a2faf1702
+ 1296  sudo docker ps
+ 1297  clear
+ 1298  sudo docker-compose up -d
+ 1299  sudo docker restart c8672bebccbb18df622eb1670a255ebfb16b7ce59b6365441a91006a2faf1702
+ 1300  docker ps -a
+ 1301  sudo docker ps -a
+ 1302  sudo docker rm c8672bebccbb 
+ 1303  sudo docker ps -a
+ 1304  sudo docker-compose up -d
+ 1305  git status
+ 1306  git pull origin master 
+ 1307  sudo docker ps -a
+ 1308  sudo docker restart 501a0c14f9c2
+ 1309  sudo docker-compose down
+ 1310  sudo docker login --username sharmilam
+ 1311  sudo docker restart 501a0c14f9c2
+ 1312  sudo docker-compose down
+ 1313  sudo docker rm 501a0c14f9c2
+ 1314  sudo docker stop  501a0c14f9c2
+ 1315  sudo docker-compose stop
+ 1316  sudo docker inspect
+ 1317  sudo docker inspect 501a0c14f9c2
+ 1318  ipythonclear
+ 1319  clear
+ 1320  sudo docker-compose down
+ 1321  sudo docker logs -f compair_app_1
+ 1322  sudo docker-compose up
+ 1323  clear
+ 1324  sudo docker ps -a
+ 1325  sudo docker kill 501a0c14f9c2
+ 1326  sudo aa-remove-unknown
+ 1327  sudo docker-compose down
+ 1328  sudo docker-compose up
+ 1329  sudo docker ps -a
+ 1330  cls
+ 1331  clear
+ 1332  sudo docker ps -a
+ 1333  sudo docker login --username sharmilam
+ 1334  sudo docker-compose down
+ 1335  sudo docker rm bc25a79ca0f9
+ 1336  sudo docker-compose up
+ 1337  sudo docker-compose up -d
+ 1338  git status
+ 1339  git pull origin master 
+ 1340  sudo docker-compose down
+ 1341  sudo docker ps -a
+ 1342  cd ..
+ 1343  ls -a
+ 1344  ls -l
+ 1345  cd newcompair/
+ 1346  dir
+ 1347  ls -l
+ 1348  cd compair/
+ 1349  ls -l
+ 1350  git pull origin master 
+ 1351  git checkout .
+ 1352  git status
+ 1353  git pull origin master 
+ 1354  git status
+ 1355  sudo docker ps -a
+ 1356  sudo docker-compose up -d
+ 1357  sudo docker-compose down
+ 1358  cd ../..
+ 1359  cd compair/
+ 1360  clear
+ 1361  sudo docker ps -a
+ 1362  sudo docker-compose up -d
+ 1363  clear
+ 1364  cd static
+ 1365  ls -l
+ 1366  cd static
+ 1367  git pull origin master 
+ 1368  cd module
+ 1369  ls -d */
+ 1370  cd compair/
+ 1371  cd static/modules/
+ 1372  ls -l
+ 1373  cd course
+ 1374  ls -l
+ 1375  vi course-assignments-partial.html 
+ 1376  vi course-module.js 
+ 1377  cd ../../../
+ 1378  cd ../
+ 1379  git status
+ 1380  git checkout .
+ 1381  git status
+ 1382  git pull origin master 
+ 1383  clear
+ 1384  git status
+ 1385  sudo docker-compose down
+ 1386  sudo docker -ps a
+ 1387  clear
+ 1388  sudo docker ps -a
+ 1389  git status
+ 1390  git pull origin master 
+ 1391  sudo docker images
+ 1392  ls -l
+ 1393  notepad Dockerfile
+ 1394  vi Dokerfile
+ 1395  git status
+ 1396  git checkout .
+ 1397  git pull origin master 
+ 1398  vi Dockerfile 
+ 1399  sudo docker-compose up -d
+ 1400  cd compair/static/modules/assignment/
+ 1401  ls -l
+ 1402  vi assignment-module.js 
+ 1403  cd ../../../..
+ 1404  ls -l
+ 1405  vi Dockerfile 
+ 1406  cd /home/node/app/compair/static/
+ 1407  cd ..
+ 1408  ls -l
+ 1409  cd ~
+ 1410  ls -l
+ 1411  cd ..
+ 1412  cd ls
+ 1413  ls
+ 1414  cd node/app/compair/static/
+ 1415  cd ..
+ 1416  dir
+ 1417  cd /home/node/app/compair/static/
+ 1418  sudo cd /home/node/app/compair/static/
+ 1419  dir
+ 1420  cd compai
+ 1421  cd compair
+ 1422  cd usr
+ 1423  cd ..
+ 1424  ls -l
+ 1425  man ls
+ 1426  ls -R
+ 1427  clear
+ 1428  ls -R Dockerfile
+ 1429  cd home/
+ 1430  ls -R Dockerfile
+ 1431  cd ~
+ 1432  cd compair/
+ 1433  ls -l
+ 1434  vi docker-compose.yml 
+ 1435  sudo docker-compose up --force-recreate
+ 1436  sudo docker-compose up --force-recreate -d
+ 1437  sudo docker ps -a
+ 1438  git status
+ 1439  git checkout .
+ 1440  git pull -u origin master 
+ 1441  git pull origin master 
+ 1442  clear
+ 1443  sudo docker-compose up --force-recreate -d
+ 1444  sudo docker-compose up down
+ 1445  sudo docker-compose down
+ 1446  sudo docker-compose up --force-recreate -d
+ 1447  git pull origin master 
+ 1448  clear
+ 1449  history
+ 1450  clear
+ 1451  history > dockercommands_file.txt
