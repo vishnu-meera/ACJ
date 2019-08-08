@@ -22,6 +22,7 @@ class Course(DefaultTableMixin, UUIDMixin, ActiveMixin, WriteTrackingMixin):
     sandbox = db.Column(db.Boolean(), nullable=False, default=False, index=True)
     start_date = db.Column(db.DateTime(timezone=True), nullable=True)
     end_date = db.Column(db.DateTime(timezone=True), nullable=True)
+    course_reliab_score = db.Column(db.Float,  default=0, nullable=True)
     # relationships
 
     # user many-to-many course with association user_course

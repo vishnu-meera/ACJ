@@ -25,6 +25,7 @@ new_course_parser.add_argument('term', required=True, nullable=False, help='Cour
 new_course_parser.add_argument('sandbox', type=bool, default=False)
 new_course_parser.add_argument('start_date', required=True, nullable=False, help='Course start date is required.')
 new_course_parser.add_argument('end_date', default=None)
+new_course_parser.add_argument('course_reliab_score', default=0)
 
 existing_course_parser = new_course_parser.copy()
 existing_course_parser.add_argument('id', required=True, nullable=False, help='Course id is required.')
