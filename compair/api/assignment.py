@@ -52,7 +52,7 @@ new_assignment_parser.add_argument('answer_grade_weight', type=int, default=1)
 new_assignment_parser.add_argument('comparison_grade_weight', type=int, default=1)
 new_assignment_parser.add_argument('self_evaluation_grade_weight', type=int, default=1)
 new_assignment_parser.add_argument('self_evaluation_grade_weight', type=int, default=1)
-new_assignment_parser.add_argument('rea_score', type=float)
+new_assignment_parser.add_argument('assgnmt_reliab_score', type=float)
 
 existing_assignment_parser = new_assignment_parser.copy()
 existing_assignment_parser.add_argument('id', required=True, nullable=False, help="Assignment id is required.")
