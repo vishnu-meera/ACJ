@@ -267,7 +267,7 @@ module.controller(
    function($scope, $routeParams, CourseResource, AssignmentResource, AssignmentPermissions,
             AnswerResource, moment, resolvedData, Toaster, LearningRecordStatementHelper, $uibModal)
     {
-        // get course info
+        console.log("CourseAssignmentsController")
         $scope.courseId = $routeParams.courseId;
 
         $scope.course = resolvedData.course;
@@ -832,6 +832,7 @@ module.controller(
     function($scope, $route, $routeParams, $location, Session,
              CourseResource, Toaster, EditorOptions, resolvedData)
     {
+        console.log("Course Controller")
         $scope.courseId = $routeParams.courseId;
         $scope.course = resolvedData.course || {};
         $scope.loggedInUserId = resolvedData.loggedInUser.id;
