@@ -278,7 +278,8 @@ module.controller(
         $scope.canCreateAssignment = resolvedData.canCreateAssignment;
         $scope.canManageAssignment = resolvedData.canManageAssignment;
         $scope.canManageUsers = resolvedData.canManageUsers;
-        $scope.course_rea_score = 2.3
+        $scope.variable2 = 2.3
+        console.log("Course====>", $scope.variable2)
         // get course assignments status
         $scope.assignments.forEach(function(assignment) {
             if (assignment.lti_linked) {

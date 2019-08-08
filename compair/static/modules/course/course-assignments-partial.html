@@ -3,7 +3,7 @@
     <div class="row">
         <header ng-class="{'col-sm-6 col-lg-7': canManageAssignment, 'col-sm-12': !canManageAssignment}">
             <h1><i class="fa fa-book"></i> {{course.name}} ({{course.year}} {{course.term}})</h1>
-            <h3>Reliability Score : {{course_rea_score}}</h3>
+			<h3>Reliability Score: {{variable2}}</h3>
         </header>
         <div ng-if="canManageAssignment" class="col-sm-6 col-lg-5 sub-nav">
             <span ng-if="canCreateAssignment">
